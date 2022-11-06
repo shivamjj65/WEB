@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATIONS AND KEY FRAMES</title>
+    <style>
+        .cont {
+            background-color: tomato;
+
+        }
+
+        .box {
+            background-color: steelblue;
+            color: violet;
+            width: 300px;
+            height: 150px;
+            position: relative;
+            animation-name: shivam;
+            animation-duration: 5s;
+            animation-iteration-count: 3; /*iteration value can be given infinite*/
+            animation-fill-mode: forwards;
+            animation-direction: reverse;
+        }
+        @keyframes shivam{
+            from{
+                width: 200px;
+            }
+            to{
+                width:900px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <div class="box">
+            <p>this is box</p>
+        </div>
+    </div>
+</body>
+
+</html>

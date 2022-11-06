@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selectors and more designing</title>
+    <style>
+        .container{
+            border: 2px solid blue;
+            background-color: rgb(253, 209, 95);
+            color: deeppink;
+            padding: 30px;
+            margin: 35px auto;
+            width:500px;
+
+        }
+        .btn{
+            background: greenyellow;
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 15px;
+            border-radius: 5px;
+        }
+        a{
+            text-decoration: none; /*This has removed underline over link*/
+        }
+        a:visited{
+            background-color: midnightblue;
+        }
+        a:hover{
+            color: lightcoral;
+            background-color: darkseagreen;    
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h2>Head 2</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio inventore vitae veniam facere iste nisi quibusdam, obcaecati, nulla quos corrupti eaque ipsa voluptates maxime quam optio! Atque eveniet necessitatibus deserunt in, dolores molestiae animi. Accusantium quos facere, repellat eligendi dolorem reiciendis incidunt earum nemo impedit quasi repudiandae commodi, aut quod voluptas. Ullam excepturi corrupti velit!</p>
+        <a href="" class="btn">Read more</a>
+        <button class="btn">Press here</button>
+    </div>
+</body>
+</html>

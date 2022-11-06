@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors</title>
+    <style>
+        .container {
+            display: block;
+            margin: auto;
+            width: max-content;
+            height: 10cm;
+            border: 3px solid blue;
+        }
+
+        input[type="text"] {
+            background-color: chartreuse;
+            padding: 0.2cm;
+        }
+
+        a[target] {
+            /*This is called pseudo selection*/
+            font-size: larger;
+            color: crimson;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        <pre>
+            pseudo selection can be done by eg:
+             input[type="text"]
+             {
+                 color:red;
+                }
+                means select whose inpuut type is text and change css
+        </pre>
+        </h1>
+        <div class="container">
+        <form action="back.php">
+            <input type="text" placeholder="enter name">
+            <input type="password" placeholder="enter pass">
+            <input type="submit" value="submit">
+        </form>
+        <h1><a href="http://google.com" target="_blank">Go to google</a></h1>
+        <!-- _blank means open link in new tab -->
+    </div>
+</body>
+
+</html>

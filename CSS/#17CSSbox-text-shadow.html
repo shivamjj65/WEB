@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box and text shadow</title>
+    <style>
+        .container{
+            display: flex
+        }
+        .card{
+            padding: 4px 3px;
+            /* border: 3px solid blue; */
+            margin: 4px;
+            box-shadow: 6px 4px 15px 1px deeppink;
+            /* box-shadow: left-value bottom-value blur-radius spread-radius; */
+            background-color: rgb(255, 140, 0);
+        }
+        #id1{
+            box-shadow: -7px -5px red;
+            /* negative values for right and top */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="id1">
+            <h1>1</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit non incidunt numquam vel quos rem iusto facere quam fuga dolores blanditiis, possimus, error in repellat animi sit hic suscipit ad aliquam dolorum nostrum! Ipsum?</p>
+        </div>
+        <div class="card" id="id2">
+            <h1>2</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus totam repudiandae dolore exercitationem excepturi quam? Eius aperiam sapiente voluptate quis voluptates sit.</p>
+        </div>
+        <div class="card" id="id3">
+            <h1>3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat id natus omnis quisquam. Saepe voluptatibus eligendi rem error natus labor MODI is GOD veritatis eius delectus reprehenderit inventore temporibus accusamus facilis dolores soluta quaerat quam aliquid! Sequi inventore, nesciunt ratione optio eius perferendis?</p>
+        </div>
+    </div>
+</body>
+
+</html>

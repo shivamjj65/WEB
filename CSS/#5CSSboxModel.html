@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            border: 5px dashed red;
+        }
+        /* This is a star selector which applies to whole markup */
+        .container {
+            background-color: cyan;
+            padding: 15px;
+            border: 4px solid rgb(245, 141, 4);
+            margin: 30px;
+        }
+
+        #second {
+            /*padding-top:20px; 
+            padding-right: 30px;
+            padding-bottom: 50px;
+            padding-bottom:80px;
+            Here padding is given seperately, we can give it together by*/
+            /* {
+                (FOR 4 VALUES)->> 
+            padding: top right bottom left;
+            padding: 20px 30px 40px 50px;
+            }
+            {
+                (FOR 2 VALUES)->>
+            padding: top-bottom right-left;
+            eg: padding: 20px 50px;
+            }
+            {
+                (FOR 1 VALUES)->>
+            padding: value;
+            eg:padding:20px;
+            }*/
+            /*SAME FOR MARGIN*/
+             padding: 20px 30px 50px 80px;
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>This is h2 heading</h2>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque non est voluptates alias
+            consequatur placeat ea numquam amet. Delectus perferendis numquam odit voluptates?</p>
+    </div>
+    <div class="container">
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque non est voluptates alias
+            consequatur placeat ea numquam amet. Delectus perferendis numquam odit voluptates?</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .box {
+            background-color: yellow;
+            font-style: italic;
+            text-align: center;
+            font-size: 60px;
+            display: none;
+        }
+
+        @media (max-width: 720px) {
+            #box1 {
+                display: block;
+            }
+        }
+
+        @media (max-width: 1080px) and (min-width: 720px) {
+            #box2 {
+                display: block;
+            }
+        }
+
+        @media (max-width: 2160px) and (min-width: 1080px) {
+            #box3 {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+    <pre>Media query helps to bring respoensiveness to web site. 
+    Syntax is:
+     @media (min-width:value) and (max-width:value){
+         id or class{
+             display:properties like block,inline,etc;
+         }
+        }
+        
+    </pre>
+    </p>
+    <div class="box" id="box1">Iphone screen</div>
+    <div class="box" id="box2">Tablet screen</div>
+    <div class="box" id="box3">PC screen</div>
+
+</body>
+
+</html>

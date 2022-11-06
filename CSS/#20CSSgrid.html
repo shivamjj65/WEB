@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID</title>
+    <style>
+        .cont
+        {
+            background-color: silver;
+            display: grid;
+            /* grid-template-columns: 300px 100px 100px;        //width given in px of columns*/
+            /* grid-template-columns: 100px 200px auto; */
+            /* grid-template-columns: 1fr 4fr 2fr;              //width given in fractions */
+        }
+        .item{
+            height: 50px;
+            font-size: larger;
+            color: azure;
+            width: 100px;
+            border: 3px yellow solid;
+            background-color: darkmagenta;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <div class="item">this is item-1</div>
+        <div class="item">this is item-2</div>
+        <div class="item">this is item-3</div>
+        <div class="item">this is item-4</div>
+        <div class="item">this is item-5</div>
+        <div class="item">this is item-6</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerts, Confirms and Prompts In Browser</title>
+</head>
+<body>
+    <div class="cont">This is a class
+        refresh this page to see a alert window
+    </div>
+    <script>
+        // Alert
+        alert("This is a alert message created using javascript in browser !");
+
+        // Prompt
+        let name=prompt("Enter your name here :","Default is GUEST");
+        console.log(name);
+
+        //CONFIRMS
+        let deletewindow = confirm("Do you really want to close window?"); //returns true or false
+        if (deletewindow){
+            console.log("window closed");
+        }
+        else{
+            console.log("You pressed cancel");
+        }
+        console.log(deletewindow);
+    </script>
+</body>
+</html>

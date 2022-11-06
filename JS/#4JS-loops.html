@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCOPE AND LOOPS</title>
+</head>
+<body>
+    <div class="cont">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi numquam sed illo repellendus necessitatibus ea sequi quaerat iste asperiores natus corrupti quo dolorum, aut quae id, eius ut in. In?</div>
+    <script>
+        //SCOPE
+        //var has global scope and let has block 
+        var a=2;
+        //this a is global here
+        
+        {
+            let b=123;
+            //scope of b is within this block
+            console.log(b);
+        }
+        console.log(a);
+        var b=23;
+        console.log(b);
+
+        const pi=3.14;
+        //value of const cannot be changed
+        console.log(pi);
+
+        // IF ELSE
+        let age=22;
+        if(age>18)
+        {
+            console.log("you can vote");
+        }
+        else if(age==18){
+            console.log("congrats you are 18 and u can vote");
+        }
+        else{
+            console.log("you cannot vote");
+
+        }
+
+        // SWITCH CASE
+        const x=22;
+        switch (x) {
+            case 1:
+                console.log("value of x is 1");
+                break;
+            case 22:
+                console.log("value of x is 22");
+                break;
+            default:
+                console.log("X is not defined");
+                break;
+        }
+    </script>
+</body>
+</html>

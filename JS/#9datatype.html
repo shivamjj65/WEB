@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datatype</title>
+</head>
+<body>
+    <div><p>There are 2 types of datatype in javascript</p><ol><li>Primitive-- memory allocation in stack</li><li>Reference-- memory allocation in heap</li></ol></div>
+    <div>
+        <p>Primitive -- has string, numbers, boolean, null, undefined, symbol</p>
+        <p>Reference -- has arrays, functions, dates, object literals, etc</p>
+    </div>
+
+    <script>
+        // primitive
+
+        // string
+        var name = "shivam";
+        console.log(name);
+        console.log("datatype of "+name+ " is: "+ (typeof name));
+
+        //numbers
+        let no = 1234;
+        console.log(no);
+
+        //boolean
+        let license = true;
+        console.log("you have a license, is it "+license+" ?");
+        console.log("datatype of "+license+ " is: "+ (typeof license));
+
+
+        //reference
+
+        //arrays
+        console.log("creating an array nos having some numbers in it")
+        let nos = [1,2,3,44,55,56,78,89];
+        for (let index = 0; index < nos.length; index++) {
+            console.log(nos[index]);
+            
+        }        
+    </script>
+</body>
+</html>

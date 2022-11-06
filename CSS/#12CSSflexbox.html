@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        .container {
+
+            /* FLEX PROPERTIES FOR FLEX CONTAINER */
+
+            height: 400px;
+            width: 90%;
+            display: flex;
+            /* container display is flex thus class item boxes come in single line instead of below each other. */
+            border: 2px solid blue;
+            /* flex properties explained down */
+            /* flex-direction: row;                     // this is default value to display in row*/
+            /* flex-direction: column;                  //this will display boxes in columns */
+            /* flex-direction: column-reverse;          //column reversed 4 3 2 1 box order */
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            /* wrap helps to compress ie wrapping the content see chrome inspect element and reduce window size */
+            /* flex-flow: row-reverse wrap;             //In single line */
+            /* justify-content: center;                 //to align content to center */
+            /* justify-content: space-between;          //gives spaces between content */
+            justify-content: space-around;
+            /* gives space in left and right */
+            align-items: center;
+            /*                                         //align the content vertically and horizontally center */
+        }
+
+        /* Parent of item is container thus if cont. is flex then item too becomes flex */
+
+        .item {
+            height: 200px;
+            width: 200px;
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 10px;
+            padding: 4px;
+        }
+
+        /* FLEX PROPERTIES FOR ITEM */
+
+        #item1{
+            order:2;                        /*THERE ARE 4 BOXES GIVEN ORDER HIGHER THE ORDER BOX WILL BE GIVEN FIRST PREFERENCE*/ 
+        }
+        #item2{
+            order: 1;                       /*THERE ARE 4 BOXES GIVEN ORDER HIGHER THE ORDER BOX WILL BE GIVEN FIRST PREFERENCE*/
+        }
+        #item3{
+            order: 3;                       /*THERE ARE 4 BOXES GIVEN ORDER HIGHER THE ORDER BOX WILL BE GIVEN FIRST PREFERENCE*/
+        }
+        #item4{
+            order: 4;                       /*SO HERE 4TH BOX HAS HIGH VALUE HENCE DISPLAYED FIRST, THEN 3RD BOX THEN 1ST BOX AND LAST 2ND BOX*/
+        }
+    </style>
+</head>
+
+<body>
+    <h1>FlexBox</h1>
+    <p>flexbox is one dimensional layout method foor laying items in rows and columns. CSS flexbox is bettter way to
+        align items into a container.</p>
+    <div class="container">
+        <div class="item" id="item1">first box</div>
+        <div class="item" id="item2">second box</div>
+        <div class="item" id="item3">third box</div>
+        <div class="item" id="item4">fourth box</div>
+    </div>
+</body>
+
+</html>

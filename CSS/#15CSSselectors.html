@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More CSS selectors</title>
+    <style>
+        h1 {
+            background-color: chartreuse;
+            color: red;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        div p {
+            /*Another way to select ie: select p from div refer line 41*/
+            background-color: chocolate;
+            color: cornsilk;
+        }
+
+        div li p {
+            background-color: crimson;
+        }
+
+        div>p {
+            /* This means apply property only to p if it is direct parent refer line 454 */
+            background-color: tomato;
+        }
+        div + p{
+            /* refer line 59 this means put css only on element which is written before the selected element. here div is before p see on line 63 */
+            background-color: black;
+            color: cornsilk;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is basic selector</h1>
+    <div class="cont">
+        <div class="row">
+            <p>This is paragraph in div class row</p>
+        </div>
+        <p>This is another para in div class cont</p>
+    </div>
+    <div>
+        <ul>
+            <li>
+                <p>this is para in list in div</p>
+            </li>
+        </ul>
+    </div>
+    <p>This is para in body</p>
+    <div>
+        <p>this p is outside span in div ie; div is direct parent</p><span>
+            <p>This is para in span in div ie; parent is span and then div</p>
+        </span>
+    </div>
+    <section>
+        <div>
+            <p>This is in div inside a section</p>
+        </div>
+        <p>this is outside div in section</p>
+    </section>
+</body>
+
+</html>

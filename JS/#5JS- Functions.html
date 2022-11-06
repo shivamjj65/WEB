@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in js</title>
+</head>
+<body>
+    <p> FUNCTIONS IN JS ARE SIMILAR AS IN C,PYTHON....
+        <pre>SYNTAX: 
+            function FUNCTION_NAME(parameters){
+                .
+                .
+                . }</pre>
+    </p>
+    <script>
+        let name0="shivam";
+        let name1="patel";
+        let name2="narendra";
+        let name3="amit";
+        let greettext="HELLO";
+        console.log(name0+" is a good boy");
+        console.log("surname of "+name0+" is "+name1 );
+        console.log(name0,name1);
+
+        function print(name,greet){ // FUNCTION TO PRINT NAMES
+            console.log(greet+" "+name);
+            let name1="modi"; //THIS name1 has scope within this functions and not affects outside name1
+            console.log(name+ " is a good boy");
+        }
+        print(name1,greettext);
+        print(name0,greettext);
+        print(name3,greettext);
+        print(name2,greettext);
+    </script>
+</body>
+</html>

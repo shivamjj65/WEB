@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Object in js</title>
+</head>
+<body>
+    <p> PRIMITIVE DATATYPES IN js : "int, string, null, boolean, undefined"
+        OTHER IS "OBJECTS"
+    </p>
+    <script>
+         let v=22; // this is int datatype
+
+        //object
+        //obj is created by keyword new
+         let arrobj= new Array(1,2,3,"shivam",null,undefined);/// a object named arrobj created as ARRAY type
+        console.log(arrobj);
+        arrobj=arrobj.sort();
+        console.log(arrobj);
+        arrobj.push("A new array element is added here");
+        
+         //Array
+         let arr=[100,2,22,"shivam",null,undefined];
+         console.log(arr);
+         console.log(arr[3]);
+        
+         //object
+         let employee={
+             name:"SHIVAM",
+             salary:200000,
+             address:"USA",
+         }
+         console.log(employee);
+         console.log(employee.address);
+
+    </script>
+</body>
+</html>

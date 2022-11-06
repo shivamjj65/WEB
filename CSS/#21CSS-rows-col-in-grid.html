@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID COLUMNS AD ROWS</title>
+    <style>
+        .grid{
+            display: grid;                                          /* grid-template-columns and grid-template-rows are used to create cols and rows in grid  */
+            grid-template-rows: 1fr 1fr 4fr;                        /*1st 2nd 3rd row size given 1fr 1fr 4fr rest will be ie, 4th 5th...will be 1fr by defualt*/
+            grid-auto-rows: 2fr;                                    /*rest rows below 3rd given size 2fr*/
+            grid-template-columns: 1fr 4fr 2fr;                     /*2 cols created*/
+            grid-gap: 1rem;
+        }
+        .box{
+            background-color: yellow;
+            border: 3px solid crimson;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="box">This is box-1</div>
+        <div class="box">This is box-2</div>
+        <div class="box">This is box-3</div>
+        <div class="box">This is box-4</div>
+        <div class="box">This is box-5</div>
+        <div class="box">This is box-6</div>
+        <div class="box">This is box-7</div>
+        <div class="box">This is box-8</div>
+        <div class="box">This is box-9</div>
+        <div class="box">This is box-10</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS VARIABLES and CUSTOM PROPERTIES</title>
+    <style>
+        /* VARAIBLE CREATED */
+        :root{
+            --colorofbox: red;
+            --coloroftext: yellow;
+            --bg-color: springgreen;
+        }
+        .box{
+            width: 200px;
+            height: 230px;
+            background-color:var(--colorofbox);  /* variable used */
+            margin: 3px 6px;
+            color: var(--coloroftext); 
+
+        }
+        .container{
+            justify-content: center;
+            margin: auto;
+            background-color: var(--bg-color);
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">MODI </div>
+        <div class="box">IS </div>
+        <div class="box">LIT </div>
+    </div>
+</body>
+
+</html>

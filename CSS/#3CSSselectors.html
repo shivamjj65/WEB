@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element selector */
+        p {
+            color: crimson;
+        }
+
+        /* ID selector */
+        #orange {
+            color: orangered;
+        }
+
+        /* CLASS selector */
+        .someofthepara {
+            background-color: sandybrown;
+            font-size: large;
+        }
+
+        /* ID selector */
+        #spanid {
+            background-color: palegreen;
+        }
+
+        /* Grouping selector */
+        header,
+        footer {
+            background-color: plum;
+            color: red;
+            font-size: larger;
+        }
+    </style>
+</head>
+
+<body>
+    <header>This is header</header>
+    <p>This is styled using internal css with CSS ELEMENT SELECTOR</p>
+    <p>This para is of red color and all other para would be red color.</p>
+    <div>
+        <p class="someofthepara">This is other red para.</p>
+    </div>
+    <p id="orange">This is para having red color. But by giving it a unique id and applying a color to that id has made
+        it orange. For reference See CODE</p>
+    <p class="someofthepara">This paragraph belong to "someofthepara class. So paras having this class name will exhibit
+        same properties.</p>
+    <span id="spanid" class="oneofthespan">This span is modded using class as well as id</span>
+    <strong>
+        <PRE>
+        ELEMENT SELECTOR:
+             p{
+            color:"red";
+                }
+        ID SELECTOR:
+            #id1{
+                color:"blue";
+            }
+        CLASS SELECTOR:
+            .class1{
+                color:"red";
+            }
+        GROUPING SELECTOR:
+            header,footer{
+                color:"yellow"
+            }
+    </PRE></strong>
+    <footer>This is footer. Both header and footer are edited by Grouping selector.</footer>
+</body>
+
+</html>

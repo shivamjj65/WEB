@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS STRING FUNCTIONS</title>
+</head>
+
+<body>
+    <div id="container">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, dolorum libero voluptatum delectus
+        odit quia? Optio aliquid quas a nemo totam in impedit ex dolores excepturi. Iste repellat accusamus laborum
+        consectetur et voluptatum nam velit. Dicta accusamus quo architecto similique delectus est sint quidem?
+    </div>
+<script>
+    var str="This is string !";
+    console.log(str);
+    //Finding position of word in string
+    var pos1 = str.indexOf('is');
+    // 0-T 1-h 2-i 3-s..since 2 se "is" start hua so answer 2 aaya
+    var temp =`${pos1} is the position of IS in above string`;
+    console.log(temp);
+    // printing last index
+    pos1 =str.lastIndexOf('is');
+    console.log(pos1);
+    //Substring from a string
+    var substr = str.slice(1,8);
+    console.log(substr);
+
+    console.log(str.toLowerCase());// to lower case
+    console.log(str.toUpperCase());/// to upper case
+    var rep=str.replace('string','ME !');//replace from old to new
+    console.log(rep);
+    var newstr= str.concat("Welcome here"); // add or concat a previous string with new
+    console.log(newstr);
+</script>
+</body>
+
+
+</html>

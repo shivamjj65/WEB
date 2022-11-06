@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position: absolute,sticky,realtive</title>
+    <style>
+        .box {
+            border: 3px solid blueviolet;
+            width: 150px;
+            height: 150px;
+            margin: 3px;
+            display: inline-block;
+        }
+        .container{
+            border: 4px yellow solid;
+            background-color: crimson;
+        }
+        #box3 {
+            /*position: absolute or static (is default) or relative or fixed or sticky;
+            postion is used to set the elements at specific postion. 
+            - Here relative means realtive to its original position. I have moved 3rd box from top and left from its original position. REALTIVE leaves a space at its original position when displaced.
+            - Similarly static means original default pos, absolute same as relative but to the parent(parent is container) so it doesn't leave space when moved.
+            -Fixed means to fix a element so if we move scroll bar or any that element will be there always
+            -Sticky means to stick that element
+            - */
+            position: absolute;
+            top: 34px;
+            left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Sansita Swashed', cursive;
+        }
+        .container {/*containers holds all divisions in it*/
+            width: 300px;
+            border: 2px solid blue;
+            margin: auto;/*automatically adjust margin in left-right*/
+        }
+
+        .item {/*item is for all divisions*/
+            border:5px solid red;
+            margin:12px 2px;
+            padding: 12px 3px;
+            background: rgb(253, 163, 213);
+        }
+        #fruits{
+            float: left;
+            width: 48%;
+        }
+        #veggies{
+            float: left;
+            width:48%
+        }
+        #grains{
+            float: left;
+            width: 48%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="fruits" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ut at
+                suscipit aspernatur ad perferendis laboriosam reiciendis debitis harum maiores. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis consequatur nesciunt aspernatur voluptate, sed optio temporibus enim necessitatibus porro dolor.</p>
+        </div>
+        <div id="veggies" class="item">
+            <h3>Veggies</h3>
+            <p id="veggpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ut at suscipit
+                aspernatur ad perferendis laboriosam reiciendis debitis harum maiores.</p>
+        </div>
+        <div id="grains" class="item">
+            <h3>Grains</h3>
+            <p id="grainspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ut at
+                suscipit aspernatur ad perferendis laboriosam reiciendis debitis harum maiores.</p>
+        </div>
+    </div>
+</body>
+
+</html>

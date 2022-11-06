@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>PARTH DOM</title>
+  </head>
+  <!--DOM 
+    1.  JYARE AAPDE WEBPAGE BANAVA..TOH ENO KOK DESIGN HASHE..JEM KE TITLE, HEAD ,BODY, ENA ANDAR HEADER, DIV, FOOTER ETC,ETC 
+        AA BADHA HTML NA ELEMENTS KEVAAY
+    2.  ONA ANDAR AAPDE KO FUNCTIONALITIES MAATE ALAG ALAG OBJECT VAPRA JEM KE TABLE, BUTTON ,FORMS ETC ETC
+        AA AAKHA STRUCTURE NE DOM KEVAAY
+
+    3.  TOH HAVE AAPDE JAVASCRIPT NA MADAD THI PAGE NA ANDAR KOI BHI JAAT NU OBJECT/ELEMENT NE TARGET KARI 
+        JEM JOVE EM ALTER KARI KAV
+
+    4.  DOM NA MADAD THI HTML PAR MANIPULATION KARVA MAATE AAPDE "document.fucntionName()" lakha
+        functionName can be any DOM method used to target element eg: createElement(), getElementBYId(), querySelectorAll(), etc etc -->
+
+  <!--
+    1.  HAVE AA PAGE NI ANDAR head, body, button, p aa maara document na objects hi
+    2. Suppose maare <p> andar no data manipulate karvo hoy toh mu javascript ma e <p> ne select karyo and ena par kok operations 
+        kari keyo
+-->
+  <body>
+    <div id = "root">
+      <!--ISKE ANDAR KUCH BI ELEMENT DAAL SAKTA HAI TU AND TARGET USING JAVASCRIPT DOM KI MADAD SE-->
+      
+      <button id="send" onclick="clicked()">CLICK ME</button>
+      <!-- AA BUTTON DABAYE TOH clicked() call thahe -->
+      
+      <p id="para">HI</p>
+      <!-- Aa ek <p>...</p> element banayu  -->
+      
+      <!--HAVE SUPPOSE MAARE HI NE CHANGE KARVU HAI USING JS-->
+    </div>
+  </body>
+
+  <script>
+    function clicked() {
+    // changing HI to HI PARTH toh lakyu document maane target the document, .getElementId("para") means evu element select kar
+    // document mathi jeni ID para hoy ane eme HTML TEXT kar HI PARTH
+      document.getElementById("para").innerHTML = "HI PARTH";
+
+    // Same as above oy khali .createElement thi navu element banayu ane HTML Document upar append kar didhu
+    document.createElement("h1").innerHTML = "AE LAALYA";
+    
+    document.getElementById("root").append(b);
+    }
+
+  </script>
+</html>

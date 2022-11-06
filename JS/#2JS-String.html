@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS STRING</title>
+</head>
+
+<body>
+    <div class="cont">
+        <h1>STRING</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa deleniti, maxime assumenda commodi ea labore
+            quasi animi quis! Voluptate quidem nobis et.</p>
+    </div>
+    <div id="content">
+        <h2>By using js we can add dynamically into elementts...refer js down</h2>
+    </div>
+    <script>
+        var str = "hello world's";
+        var name= "shivam";
+        var temp=`${name} is a nice person`;
+        console.log(str);
+        console.log(temp);
+        //there is class named content above lets add more to it using js
+    
+        document.getElementById('content').innerHTML='<h1>This is added dynamically using javasciprt<h1>'
+    </script>
+</body>
+
+</html>
